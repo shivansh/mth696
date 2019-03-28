@@ -1,0 +1,19 @@
+--- [N = 50] ------------------------------------
+>> p12
+Elapsed time is 0.013973 seconds.
+>> p18_2
+Elapsed time is 0.029608 seconds.
+
+
+--- [N = 200] -----------------------------------
+>> p12
+Elapsed time is 0.056466 seconds.
+>> p18_2
+Elapsed time is 0.049027 seconds.
+
+
+--- [N = 500] -----------------------------------
+>> p12
+Elapsed time is 0.750645 seconds.
+>> p18_2
+Elapsed time is 0.181393 seconds.
