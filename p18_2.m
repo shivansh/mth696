@@ -1,5 +1,5 @@
 % p18_2.m - accuracy of FFT spectral differentiation
-% The functions in this program are the same as the ones in p12.m
+% The example functions in this program are the same as those in p12.m
 
 tic;
 Nmax = 50; E = zeros(3,Nmax);
