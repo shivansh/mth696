@@ -3,7 +3,7 @@
 % Compute derivatives for various values of N:
 
 tic;
-Nmax = 50; E = zeros(3,Nmax);
+Nmax = 500; E = zeros(3,Nmax);
 for N = 1:Nmax;
     [D,x] = cheb(N);
     v = abs(x).^3; vprime = 3*x.*abs(x);

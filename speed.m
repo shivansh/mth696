@@ -1,10 +1,10 @@
-Nmax = 200;
+Nmax = 500;
 
 t1 = zeros(Nmax, 1);
 t2 = zeros(Nmax, 1);
 
+% Chebychev differentiation via matrices
 for N = 1:Nmax;
-    % Chebychev differentiation via matrices
     tStart = tic;
     
     [D,x] = cheb(N);
@@ -21,10 +21,12 @@ for N = 1:Nmax;
     E(4,N) = norm(D*v-vprime,inf);
     
     t1(N) = toc(tStart);  % time elapsed
-    
+end
+
+% Chebychev differentiation via FFT
+for N = 1:Nmax;
     tStart = tic;
     
-    % Chebychev differentiation via FFT
     x = cos(pi*(0:N)'/N);
     v = abs(x).^3; vprime = 3*x.*abs(x);
     % 3rd deriv in BV
@@ -38,7 +40,6 @@ for N = 1:Nmax;
     % polynomial
     E(4,N) = norm(chebfft(v, x)-vprime,inf);
     
-    tElapsed = toc(tStart);
     t2(N) = toc(tStart);  % time elapsed
 end
 
