@@ -2,7 +2,7 @@
 % The example functions in this program are the same as those in p12.m
 
 tic;
-Nmax = 500; E = zeros(3,Nmax);
+Nmax = 50; E = zeros(3,Nmax);
 for N = 1:Nmax;
     x = cos(pi*(0:N)'/N);
     v = abs(x).^3; vprime = 3*x.*abs(x);

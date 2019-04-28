@@ -16,3 +16,4 @@ for N = [10 20]
     line(x,error,'linewidth',.8)
     title([' error in u''(x), N=' int2str(N)])
 end
+
